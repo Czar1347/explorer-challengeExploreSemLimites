@@ -11,11 +11,10 @@
     --background-white-card: #FFF;
     --background-blue: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
     --color-legend-h1: #B52184;
-    --color-p: #312D64;
-
+    --color-text-defaul: #312D64;
 }
 
-body {
+body, textarea, .button{
     font-family: 'Mulish', sans-serif;
     font-size: 1.6rem;
 }
@@ -23,7 +22,7 @@ h1, legend{
     color: var(--color-legend-h1);
 }
 p{
-    color: var(--color-p);
+    color: var(--color-text-defaul);
 }
 #astronaut {
     background: var(--background-white);
@@ -86,3 +85,71 @@ legend {
 #cards p{
     font-weight: 600;
 }
+#contact {
+    padding: 7.8rem 4.1rem 6.5rem;
+}
+#contact fieldset{
+    border: none;
+}
+#contact legend{
+    margin-bottom: 4.3rem;
+}
+#contact .fieldset-wrapper{
+    display: grid;
+    gap: 2.4rem
+}
+#contact .input-wrapper input,
+#contact .textarea-wrapper textarea{
+    width: 100%;
+    border: 0.15rem solid ;
+    border-radius: 1.6rem;
+    padding: 1.2rem 1.6rem;
+    color: var(--text-base-color);
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+}
+#contact .textarea-wrapper textarea{
+    height: 12.6rem;
+
+}
+#contact .input-wrapper input::placeholder,
+#contact .textarea-wrapper textarea::placeholder{ 
+    color: var(--text-base-color);
+    font-weight: 500;
+    line-height: 2.2rem;
+    font-size: 1.6rem;
+}
+#contact .input-wrapper input::placeholder{
+    padding: 2.8rem;
+}
+#contact .input-wrapper #name{
+    background: url(./assets/name-icon.svg) no-repeat 1.4rem center;
+}
+#contact .input-wrapper #email{
+    background: url(./assets/email-icon.svg) no-repeat scroll 1.4rem center;
+}
+#contact .button{
+    border: none;
+    margin-top: 2.4rem;
+    padding: 1.6rem;
+    border-radius: 1.6rem;
+    background: linear-gradient(96deg, #343193 0%, #302C63 100%);
+    color: var(--background-white);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+}
+footer {
+    background: var(--background-blue);
+  
+    padding: 3.2rem 1.6rem;
+  }
+  
+  footer p {
+    color: var(--background-white);
+    font-size: 1.9rem;
+    line-height: 2.4rem;
+    font-weight: 600;
+    text-align: center;
+  }
